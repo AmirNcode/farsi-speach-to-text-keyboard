@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+
+# Xcode / iOS
+build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+*.xcscmblueprint
+*.xccheckout
+.swiftpm/
+Pods/
+
+# Node / Cloudflare Worker
+node_modules/
+dist/
+.wrangler/
+
+# Secrets / local env
+.dev.vars
+.env
+*.env
+!*.env.example
