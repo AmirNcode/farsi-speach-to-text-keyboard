@@ -5,6 +5,14 @@ Instructions for any AI assistant (or developer) working in this repo.
 ## First thing: read the docs
 **Always read [docs/README.md](docs/README.md) before doing anything.** It links the master spec and all context. The spec at `docs/superpowers/specs/2026-06-16-farsi-voice-keyboard-v1-design.md` is the source of truth.
 
+**Track work in [docs/PROJECT-PLAN.md](docs/PROJECT-PLAN.md).** It's the phased task tracker — pick the next unchecked phase, do it, check it off. One phase per session to keep token usage tight.
+
+## Communication style: caveman speak
+Reply in **caveman speak** (terse; drop articles/filler/pleasantries; fragments OK; short synonyms) to save tokens. Default level **full**. Rules + levels: caveman skill at `~/.claude/plugins/cache/caveman/.../skills/caveman/SKILL.md` (plugin: github.com/juliusbrussee/caveman). If the Skill tool can't invoke it, read that SKILL.md and follow it.
+- **Keep exact:** code, commit messages, PRs, specs, and the `docs/` files — write those in **normal clear English** (they're for future devs/AI).
+- **Drop caveman for:** security warnings, irreversible-action confirmations, and any multi-step sequence where terseness risks misreading. Resume after.
+- Owner is non-technical — terse, but still understandable.
+
 ## What this project is
 An iOS custom keyboard for Farsi speakers. Headline feature: **accurate Farsi voice-to-text** via Whisper large-v3 (cloud). Secondary: **flick-down numbers** (iPad-style). Currently for the owner + friends/family; paid later.
 

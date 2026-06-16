@@ -3,6 +3,7 @@
 Start here. These docs contain everything needed for a developer or AI assistant to pick up this project cold.
 
 ## Read in this order
+0. **[PROJECT-PLAN.md](PROJECT-PLAN.md)** — phased task tracker; what's done, what's next, one-phase-per-session.
 1. **[context/overview.md](context/overview.md)** — what this is, why, current phase, key constraints.
 2. **[superpowers/specs/2026-06-16-farsi-voice-keyboard-v1-design.md](superpowers/specs/2026-06-16-farsi-voice-keyboard-v1-design.md)** — the master v1 spec (the source of truth).
 3. **[context/decisions.md](context/decisions.md)** — every locked decision + the reasoning (D1–D15).
