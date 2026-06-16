@@ -11,5 +11,8 @@
     "esModuleInterop": true,
     "verbatimModuleSyntax": false
   },
-  "include": ["src", "test"]
+  "include": ["src", "test"],
+  // integration.test.ts uses Node APIs (node:fs, process) that clash with
+  // Workers globals; it is verified by running it under vitest, not by tsc.
+  "exclude": ["test/integration.test.ts"]
 }

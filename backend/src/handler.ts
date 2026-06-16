@@ -26,8 +26,10 @@ export async function handleTranscribe(
     return json(400, { error: "bad_request" });
   }
 
-  const audio = form.get("audio");
-  if (!(audio instanceof Blob)) {
+  // At runtime a file field is a Blob/File; some @cloudflare/workers-types
+  // versions under-type FormData.get, so we state the shape explicitly.
+  const audio = form.get("audio") as Blob | string | null;
+  if (audio === null || typeof audio === "string") {
     return json(400, { error: "missing_audio" });
   }
   if (audio.size > MAX_AUDIO_BYTES) {
