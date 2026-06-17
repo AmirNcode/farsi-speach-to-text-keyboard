@@ -23,10 +23,10 @@ Plan: `docs/superpowers/plans/2026-06-16-backend-transcription-worker.md`
 - [x] Worker entry + routing (`/health`, `/transcribe`)
 - [x] Opt-in real-Groq integration test + backend README
 - [x] Clean typecheck + `npm run typecheck`
-- [ ] 👤 **Deploy** (Task 7): Cloudflare + Groq accounts → `wrangler login` → set `GROQ_API_KEY` + `APP_TOKEN` → `npm run deploy`. Record Worker URL + APP_TOKEN. Steps: `docs/context/setup-prerequisites.md`.
+- [x] 👤 **Deploy** — **LIVE** at `https://farsi-voice-keyboard.hello-fe6.workers.dev` (Groq key + APP_TOKEN set; `/health`, 401/400/404 verified). Real Groq transcription proven later, in the iOS spike.
 
-## Phase 2 — iOS Spike #1 (de-risk) ⬜
-Plan: _to be written next._ Goal: prove the riskiest assumptions before building the full keyboard.
+## Phase 2 — iOS Spike #1 (de-risk) ⬜ ← next, plan ready
+Plan: `docs/superpowers/plans/2026-06-17-ios-spike-keyboard.md`. Goal: prove the riskiest assumptions before building the full keyboard. Worker is live, so the spike can run end-to-end once built on the Mac.
 - [ ] Xcode project: container app + keyboard extension target + App Group
 - [ ] Barebones keyboard records mic (validate Full Access works in extension)
 - [ ] POST audio to the deployed Worker → insert returned text
