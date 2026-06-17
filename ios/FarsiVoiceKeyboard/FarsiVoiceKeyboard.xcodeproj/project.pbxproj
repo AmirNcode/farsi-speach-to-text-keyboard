@@ -11,6 +11,10 @@
 		29A2B3D32FE3075A0086C6F7 /* KeyboardKit in Frameworks */ = {isa = PBXBuildFile; productRef = 29A2B3D22FE3075A0086C6F7 /* KeyboardKit */; };
 		29A2B3DC2FE30BD40086C6F7 /* FlickDigits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A2B3DA2FE30B160086C6F7 /* FlickDigits.swift */; };
 		29A2B3DD2FE30BD40086C6F7 /* FlickDigits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A2B3DA2FE30B160086C6F7 /* FlickDigits.swift */; };
+		29A2B3DF2FE30E100086C6F7 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A2B3DE2FE30E060086C6F7 /* Config.swift */; };
+		29A2B3E02FE30E100086C6F7 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A2B3DE2FE30E060086C6F7 /* Config.swift */; };
+		29A2B3E52FE30E860086C6F7 /* TranscriptionClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A2B3E42FE30E850086C6F7 /* TranscriptionClient.swift */; };
+		29A2B3E62FE30E860086C6F7 /* TranscriptionClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A2B3E42FE30E850086C6F7 /* TranscriptionClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,8 @@
 		29A2B3AD2FE302F40086C6F7 /* FarsiVoiceKeyboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FarsiVoiceKeyboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		29A2B3C42FE303310086C6F7 /* Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Keyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		29A2B3DA2FE30B160086C6F7 /* FlickDigits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickDigits.swift; sourceTree = "<group>"; };
+		29A2B3DE2FE30E060086C6F7 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		29A2B3E42FE30E850086C6F7 /* TranscriptionClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptionClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -154,6 +160,8 @@
 		29A2B3D92FE30B080086C6F7 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				29A2B3E42FE30E850086C6F7 /* TranscriptionClient.swift */,
+				29A2B3DE2FE30E060086C6F7 /* Config.swift */,
 				29A2B3DA2FE30B160086C6F7 /* FlickDigits.swift */,
 			);
 			path = Shared;
@@ -343,6 +351,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				29A2B3DC2FE30BD40086C6F7 /* FlickDigits.swift in Sources */,
+				29A2B3DF2FE30E100086C6F7 /* Config.swift in Sources */,
+				29A2B3E62FE30E860086C6F7 /* TranscriptionClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +375,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				29A2B3DD2FE30BD40086C6F7 /* FlickDigits.swift in Sources */,
+				29A2B3E02FE30E100086C6F7 /* Config.swift in Sources */,
+				29A2B3E52FE30E860086C6F7 /* TranscriptionClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
