@@ -25,8 +25,14 @@ Plan: `docs/superpowers/plans/2026-06-16-backend-transcription-worker.md`
 - [x] Clean typecheck + `npm run typecheck`
 - [x] 👤 **Deploy** — **LIVE** at `https://farsi-voice-keyboard.hello-fe6.workers.dev` (Groq key + APP_TOKEN set; `/health`, 401/400/404 verified). Real Groq transcription proven later, in the iOS spike.
 
-## Phase 2 — iOS Spike #1 (de-risk) ⬜ ← next, plan ready
-Plan: `docs/superpowers/plans/2026-06-17-ios-spike-keyboard.md`. Goal: prove the riskiest assumptions before building the full keyboard. Worker is live, so the spike can run end-to-end once built on the Mac.
+## Phase 2 — iOS Spike #1 (de-risk) ⏳ in progress — KEY FINDING
+Plan: `docs/superpowers/plans/2026-06-17-ios-spike-keyboard.md`.
+**Findings (2026-06-17):**
+- ✅ KeyboardKit free core renders custom keyboard + inserts text (after fixing framework embedding: app target Embed & Sign, extension Do Not Embed).
+- ✅ Flick-down digit gesture works (`q`→`1`, `ض`→`۱`).
+- ✅ Backend `/transcribe` live.
+- ❌ **Mic recording blocked inside the keyboard extension** (iOS platform limit — see decisions.md **D16**). Pivot: record in the **container app**, return text to the keyboard via pasteboard/App Group.
+- ⬜ Next: prove transcription pipeline in the container app (record → Worker → Farsi text), then build the keyboard→app→keyboard bounce. Decide pasteboard (free) vs App Group (maybe needs $99 acct).
 - [ ] Xcode project: container app + keyboard extension target + App Group
 - [ ] Barebones keyboard records mic (validate Full Access works in extension)
 - [ ] POST audio to the deployed Worker → insert returned text

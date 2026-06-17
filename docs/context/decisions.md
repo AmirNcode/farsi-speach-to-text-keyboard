@@ -50,3 +50,16 @@ KeyboardKit's free core includes an emoji keyboard, so it may be low-effort. Dec
 
 ### D15 — 60-second clip cap
 Covers nearly all messages while bounding latency and cost. Enforced client- and server-side.
+
+### D16 — Mic blocked in keyboard extension → record in the container app (Spike #1 finding, 2026-06-17)
+**Confirmed:** iOS does **not** allow microphone recording inside a keyboard extension, even with Full Access enabled and mic permission granted. `AVAudioRecorder.record()` returns false; the OS log states the extension "doesn't have entitlements to record audio." This is a platform-wide limitation — Gboard/SwiftKey/WeChat all hit it.
+
+**What still works (proven in Spike #1):** KeyboardKit free core renders our custom keyboard view, inserts text via the proxy, and the flick-down digit gesture works. The backend `/transcribe` (Groq Whisper) is live.
+
+**Decision:** Voice recording moves to the **container app** (apps can use the mic). Flow:
+1. Keyboard mic button → `extensionContext.open("farsivoicekeyboard://dictate")` opens our app.
+2. App records + POSTs to the Worker + gets text.
+3. Result returns to the keyboard via the **system pasteboard** (works on the free account, no App Group) — or an **App Group** later (cleaner; may need the paid Apple Developer account).
+4. On returning to the host app, the keyboard inserts the result.
+
+UX = a brief bounce to our app per dictation (same as other iOS voice keyboards). First we prove the transcription pipeline directly in the container app, then build the bounce/return. (Also: Android keyboards CAN record mic directly — this limitation is iOS-only, noted for the future Android build.)
