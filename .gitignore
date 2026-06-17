@@ -21,3 +21,6 @@ dist/
 .env
 *.env
 !*.env.example
+
+# iOS local secrets (real Worker token) — keep out of git
+ios/**/Config.swift
