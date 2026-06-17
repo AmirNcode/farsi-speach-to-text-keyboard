@@ -15,6 +15,8 @@
 		29A2B3E02FE30E100086C6F7 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A2B3DE2FE30E060086C6F7 /* Config.swift */; };
 		29A2B3E52FE30E860086C6F7 /* TranscriptionClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A2B3E42FE30E850086C6F7 /* TranscriptionClient.swift */; };
 		29A2B3E62FE30E860086C6F7 /* TranscriptionClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A2B3E42FE30E850086C6F7 /* TranscriptionClient.swift */; };
+		29A2B3E82FE32A280086C6F7 /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A2B3E72FE32A270086C6F7 /* AudioRecorder.swift */; };
+		29A2B3E92FE32A280086C6F7 /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A2B3E72FE32A270086C6F7 /* AudioRecorder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,7 @@
 		29A2B3DA2FE30B160086C6F7 /* FlickDigits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickDigits.swift; sourceTree = "<group>"; };
 		29A2B3DE2FE30E060086C6F7 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		29A2B3E42FE30E850086C6F7 /* TranscriptionClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptionClient.swift; sourceTree = "<group>"; };
+		29A2B3E72FE32A270086C6F7 /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -160,6 +163,7 @@
 		29A2B3D92FE30B080086C6F7 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				29A2B3E72FE32A270086C6F7 /* AudioRecorder.swift */,
 				29A2B3E42FE30E850086C6F7 /* TranscriptionClient.swift */,
 				29A2B3DE2FE30E060086C6F7 /* Config.swift */,
 				29A2B3DA2FE30B160086C6F7 /* FlickDigits.swift */,
@@ -350,6 +354,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29A2B3E92FE32A280086C6F7 /* AudioRecorder.swift in Sources */,
 				29A2B3DC2FE30BD40086C6F7 /* FlickDigits.swift in Sources */,
 				29A2B3DF2FE30E100086C6F7 /* Config.swift in Sources */,
 				29A2B3E62FE30E860086C6F7 /* TranscriptionClient.swift in Sources */,
@@ -374,6 +379,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29A2B3E82FE32A280086C6F7 /* AudioRecorder.swift in Sources */,
 				29A2B3DD2FE30BD40086C6F7 /* FlickDigits.swift in Sources */,
 				29A2B3E02FE30E100086C6F7 /* Config.swift in Sources */,
 				29A2B3E52FE30E860086C6F7 /* TranscriptionClient.swift in Sources */,
