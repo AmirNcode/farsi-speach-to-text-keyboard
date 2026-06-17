@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		29A2B3CB2FE303320086C6F7 /* Keyboard.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 29A2B3C42FE303310086C6F7 /* Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		29A2B3D32FE3075A0086C6F7 /* KeyboardKit in Frameworks */ = {isa = PBXBuildFile; productRef = 29A2B3D22FE3075A0086C6F7 /* KeyboardKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29A2B3D32FE3075A0086C6F7 /* KeyboardKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +237,7 @@
 			);
 			name = Keyboard;
 			packageProductDependencies = (
+				29A2B3D22FE3075A0086C6F7 /* KeyboardKit */,
 			);
 			productName = Keyboard;
 			productReference = 29A2B3C42FE303310086C6F7 /* Keyboard.appex */;
@@ -275,6 +278,9 @@
 			);
 			mainGroup = 29A2B38D2FE302F20086C6F7;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				29A2B3D12FE3075A0086C6F7 /* XCRemoteSwiftPackageReference "KeyboardKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 29A2B3972FE302F20086C6F7 /* Products */;
 			projectDirPath = "";
@@ -743,6 +749,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		29A2B3D12FE3075A0086C6F7 /* XCRemoteSwiftPackageReference "KeyboardKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/KeyboardKit/KeyboardKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		29A2B3D22FE3075A0086C6F7 /* KeyboardKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29A2B3D12FE3075A0086C6F7 /* XCRemoteSwiftPackageReference "KeyboardKit" */;
+			productName = KeyboardKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 29A2B38E2FE302F20086C6F7 /* Project object */;
 }
