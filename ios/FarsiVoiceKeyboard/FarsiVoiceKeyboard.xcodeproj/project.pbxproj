@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		29A2B3CB2FE303320086C6F7 /* Keyboard.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 29A2B3C42FE303310086C6F7 /* Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		29A2B3D32FE3075A0086C6F7 /* KeyboardKit in Frameworks */ = {isa = PBXBuildFile; productRef = 29A2B3D22FE3075A0086C6F7 /* KeyboardKit */; };
+		29A2B3DC2FE30BD40086C6F7 /* FlickDigits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A2B3DA2FE30B160086C6F7 /* FlickDigits.swift */; };
+		29A2B3DD2FE30BD40086C6F7 /* FlickDigits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A2B3DA2FE30B160086C6F7 /* FlickDigits.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,7 @@
 		29A2B3A32FE302F40086C6F7 /* FarsiVoiceKeyboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FarsiVoiceKeyboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		29A2B3AD2FE302F40086C6F7 /* FarsiVoiceKeyboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FarsiVoiceKeyboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		29A2B3C42FE303310086C6F7 /* Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Keyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		29A2B3DA2FE30B160086C6F7 /* FlickDigits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickDigits.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -128,6 +131,7 @@
 		29A2B38D2FE302F20086C6F7 = {
 			isa = PBXGroup;
 			children = (
+				29A2B3D92FE30B080086C6F7 /* Shared */,
 				29A2B3982FE302F20086C6F7 /* FarsiVoiceKeyboard */,
 				29A2B3A62FE302F40086C6F7 /* FarsiVoiceKeyboardTests */,
 				29A2B3B02FE302F40086C6F7 /* FarsiVoiceKeyboardUITests */,
@@ -145,6 +149,14 @@
 				29A2B3C42FE303310086C6F7 /* Keyboard.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		29A2B3D92FE30B080086C6F7 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				29A2B3DA2FE30B160086C6F7 /* FlickDigits.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,6 +342,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29A2B3DC2FE30BD40086C6F7 /* FlickDigits.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +364,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29A2B3DD2FE30BD40086C6F7 /* FlickDigits.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
